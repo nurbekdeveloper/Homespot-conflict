@@ -55,7 +55,7 @@
 
 @media (max-width: 768px) {
   .card-ready {
-      flex: 1 1 calc(50% - 20px);
+      flex: 1 1 calc(50%);
   }
 }
 

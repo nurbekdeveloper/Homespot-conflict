@@ -72,7 +72,7 @@ function MoreInformation() {
         </div>
         <div className="construction-cost">
           <h1 className="font-semibold text-2xl">Стоимость строительства дома:</h1>
-          <div className="cost">9 045 283 руб.</div>
+          <div className="cost"> руб.</div>
           <div className="note">Без учета устройства террасы</div>
           <div className="details">
             <div className="detail">

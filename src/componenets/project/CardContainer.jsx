@@ -1,12 +1,16 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./CardContainer.css";
 import { houses } from "../data/homes.db";
+import { useDispatch } from "react-redux";
 
 const CardContainer = () => {
   const navigate = useNavigate();
   const filterReady = houses.filter((r) => r.type === "ready");
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="card-container-wrapper mt-[100px]">
       <h2 className="title mb-3 font-semibold text-2xl">
@@ -18,10 +22,11 @@ const CardContainer = () => {
       </p>
       <div className="card-container">
         {filterReady.map((card, index) => (
-          <div
+          <Link
+            to={`/moreinformation/${card.url}`}
             key={index}
             className="card-ready mt-[60px]"
-            onClick={() => navigate(`moreinformation/${card.url}`)}
+            // onClick={() => navigate(`moreinformation/${card.url}`)}
           >
             <img src={card.image} alt={card.title} className="card-image" />
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-base font-sans">
@@ -48,7 +53,7 @@ const CardContainer = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

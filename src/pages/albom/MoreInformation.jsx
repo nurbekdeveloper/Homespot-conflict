@@ -24,7 +24,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "./MoreInformation.css";
 import { useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { changeModal } from "../../pages/redux/slice/modal.slice";
 import { houses } from "../../componenets/data/homes.db";
@@ -34,21 +34,19 @@ import ContactForm from "../../componenets/form/ContactForm";
 
 function MoreInformation() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  const imgs = [
-    { id: 0, value: carousel3 },
-    { id: 1, value: carousel1 },
-    { id: 2, value: carousel2 },
-  ];
+  const { pathname } = useLocation();
+
 
   const [val, setVal] = useState(0);
   const { slug } = useParams();
 
   const HouseData = houses.find((c) => c.url === slug);
-  const [wordData, setWordData] = useState(HouseData?.imgs[0]);
-
+  const [wordData, setWordData] = useState(HouseData?.imgs[1]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setWordData(HouseData?.imgs[1])
+  }, [pathname]);
+  console.log(HouseData?.imgs[0]);
   const handleClick = (index) => {
     setVal(index);
     setWordData(HouseData?.imgs[index]);

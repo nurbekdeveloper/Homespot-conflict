@@ -84,7 +84,7 @@ const Navbar = () => {
         <a href='tel:+998712357447' className='navbar_phone'>
           <p>+7 <span>(920) 926 07 07</span></p>
         </a>
-        <button className='mobile-button' onClick={() => dispatch(changeModal(true))}>ОСТАВИТЬ ЗАЯВКУ</button>
+        <button className='mobile-button  bg-[#49da49]' onClick={() => dispatch(changeModal(true))}>ОСТАВИТЬ ЗАЯВКУ</button>
       </div>
       <div className={`dropdown ${dropdown ? 'open' : ''}`}>
         <div className='nav_item'>

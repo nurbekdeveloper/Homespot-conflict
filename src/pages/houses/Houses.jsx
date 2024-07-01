@@ -89,10 +89,9 @@ const House = ({ url, data = houses }) => {
           <button>1</button>
           <button>2</button>
           <button>3</button>
-          <button>4</button>
-          <button>5</button>
+
           <span>...</span>
-          <button>15</button>
+          <button>5</button>
         </div>
         <button className="filter-button">Расширенный фильтр</button>
       </div>

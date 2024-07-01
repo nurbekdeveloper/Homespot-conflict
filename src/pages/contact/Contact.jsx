@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CardContainer from '../../componenets/project/CardContainer';
 import ClientOpinion from '../ClientOpinion/ClientOpinion';
+import CardContainer from '../../componenets/project/CardContainer';
 
 
 const Contact = () => {
@@ -26,8 +26,8 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="flex flex-row bg-gray-800 text-white w-full p-6">
-        <div className="w-1/2 p-4">
+      <div className="contact-container flex flex-col md:flex-row bg-gray-800 text-white w-full p-6">
+        <div className="contact-info w-full md:w-1/2 p-4">
           <h1 className="text-xl font-bold">КОНТАКТЫ</h1>
           <div className="text-sm mt-1 gap-4">
             <p>Свяжитесь с нами: <strong>+7(920) 926 07 07</strong></p>
@@ -36,7 +36,7 @@ const Contact = () => {
             <a href="mailto:info@vsmk.ru" className="text-white">info@swedstandard.ru</a>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="w-1/2 p-4 space-y-3">
+        <form onSubmit={handleSubmit} className="contact-form w-full md:w-1/2 p-4 space-y-3">
           <input
             type="tel"
             name="phone"
@@ -64,7 +64,7 @@ const Contact = () => {
           <button type="submit" className="w-full bg-green-400 text-black py-2">Заказать звонок</button>
         </form>
       </div>
-      <div id="map" className="w-full h-[400px]">
+      <div id="map" className="w-full h-[400px] mt-4">
         <iframe
           src="https://yandex.ru/map-widget/v1/?ll=40.470595%2C56.146894&mode=whatshere&whatshere%5Bpoint%5D=40.426434%2C56.136111&whatshere%5Bzoom%5D=17&z=13.1"
           width="100%"

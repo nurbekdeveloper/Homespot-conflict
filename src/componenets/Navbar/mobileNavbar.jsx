@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { changeModal } from '../../pages/redux/slice/modal.slice';
@@ -27,6 +27,7 @@ const Resnav = () => {
     };
 
     const hideDropdown = () => {
+        setFirstnav(false);
         setConstructionNav(false);
         setServiceNav(false);
     };
@@ -58,7 +59,7 @@ const Resnav = () => {
                 <a className='resnav-phone' href='tel:+998712357447'>
                     <p>+7 <span>(920) 926 07 07</span></p>
                 </a>
-                <button className='mobile1-button' onClick={() => dispatch(changeModal(true))}>ОСТАВИТЬ ЗАЯВКУ</button>
+                <button className='mobile1-button' onClick={() => { hideDropdown(); dispatch(changeModal(true)); }}>ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
             <div className={`second-nav ${constructionNav && firstnav ? "" : "close"}`}>
                 <div className='sec-nav-mebel' onClick={() => setConstructionNav(false)}>

@@ -24,7 +24,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "./MoreInformation.css";
 import { useDispatch } from "react-redux";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { changeModal } from "../../pages/redux/slice/modal.slice";
 import { houses } from "../../componenets/data/homes.db";
@@ -44,15 +44,16 @@ function MoreInformation() {
   ];
 
   const [val, setVal] = useState(0);
-  const {slug} = useParams()
+  const { slug } = useParams();
 
-  const HouseData = houses.find(c=>c.url === slug)
+  const HouseData = houses.find((c) => c.url === slug);
   const [wordData, setWordData] = useState(HouseData?.imgs[0]);
 
   const handleClick = (index) => {
     setVal(index);
     setWordData(HouseData?.imgs[index]);
   };
+
   return (
     <div className="main-carousel">
       <div className="carousel-informations">
@@ -68,15 +69,11 @@ function MoreInformation() {
                   onClick={() => handleClick(i)}
                 />
               </div>
-
             ))}
           </div>
         </div>
         <div className="construction-cost">
-          <h1 className="font-semibold  text-2xl">
-            Стоимость строительства дома:
-          </h1>
-
+          <h1 className="font-semibold text-2xl">Стоимость строительства дома:</h1>
           <div className="cost">9 045 283 руб.</div>
           <div className="note">Без учета устройства террасы</div>
           <div className="details">
@@ -95,34 +92,33 @@ function MoreInformation() {
             <h2>Спецификация</h2>
             <ul className="label-items">
               <li className="label-item">
-              	<b>Фундамент:</b> {HouseData?.fundament}
+                <b>Фундамент:</b> {HouseData?.fundament}
               </li>
               <li className="label-item">
-              <b>Стены:</b>{HouseData?.steni}
+                <b>Стены:</b> {HouseData?.steni}
               </li>
               <li className="label-item">
-               <b>Потолки:</b> Первый этаж 3 м,
+                <b>Потолки:</b> Первый этаж 3 м,
               </li>
               <li className="label-item">
-                <b>Перекрытие: </b>– по деревянным балкам с обработкой огне–биозащитой.
+                <b>Перекрытие:</b> – по деревянным балкам с обработкой огне–биозащитой.
               </li>
               <li className="label-item">
                 <b>Перегородки:</b> Кирпичные, толщиной, 120 мм,
               </li>
               <li className="label-item">
-              <b>Вентиляция:</b> Естественная вентиляция для котельной, кухни и санузлов, выводящаяся на кровлю.
+                <b>Вентиляция:</b> Естественная вентиляция для котельной, кухни и санузлов, выводящаяся на кровлю.
               </li>
               <li className="label-item">
-                <b>Кровля :</b> Стропильная система, супердиффузионная мембрана Folder, металлочерепица Grand Line 0.5 мм (Ral 8017).
-
-
+                <b>Кровля:</b> Стропильная система, супердиффузионная мембрана Folder, металлочерепица Grand Line 0.5 мм (Ral 8017).
               </li>
             </ul>
           </div>
           <div className="buttons">
             <button
               onClick={() => dispatch(changeModal(true))}
-              className="consultation bg-[#65a30d]" >
+              className="consultation bg-[#65a30d]"
+            >
               Получить консультацию
             </button>
           </div>
@@ -131,9 +127,7 @@ function MoreInformation() {
 
       <div className="info-section">
         <section className="header-icon">
-          <h2 className="font-semibold  text-2xl">
-            Что еще входит в стоимость
-          </h2>
+          <h2 className="font-semibold text-2xl">Что еще входит в стоимость</h2>
           <div className="features">
             <div className="feature">
               <FaShieldAlt size={50} />
@@ -155,74 +149,72 @@ function MoreInformation() {
         </section>
 
         <div>
-        <h2 className="font-semibold  mb-[100px] text-2xl">Дополнительные услуги</h2>
+          <h2 className="font-semibold mb-[100px] text-2xl">Дополнительные услуги</h2>
           <div className="extra-usluge">
-          <div className="bg-gray-100 p-4 md:p-6 flex flex-col items-center">
-      <div className="w-full max-w-3xl p-4 md:p-6 bg-white shadow-md rounded-lg">
-        <div className="mb-3">
-          <h2 className="text-xl md:text-2xl font-bold mb-1 text-blue-700">Облицовочный кирпич</h2>
-          <p className="mb-1">
-            <strong>Преимущества:</strong> Долговечность, устойчивость к погоде, классический вид.
-          </p>
-          <p>
-            <strong>Недостатки:</strong> Высокая стоимость, трудоёмкая установка.
-          </p>
-        </div>
-        <div className="mb-3">
-          <h2 className="text-xl md:text-2xl font-bold mb-1 text-green-700">Декоративная штукатурка</h2>
-          <p className="mb-1">
-            <strong>Преимущества:</strong> Разнообразие текстур и цветов, улучшенная теплоизоляция.
-          </p>
-          <p>
-            <strong>Недостатки:</strong> Требует ухода, менее долговечна.
-          </p>
-        </div>
-        <div className="mb-3">
-          <h2 className="text-xl md:text-2xl font-bold mb-1 text-yellow-700">Комбинированная отделка</h2>
-          <p className="mb-1">
-            <strong>Преимущества:</strong> Комбинация материалов, улучшенный дизайн, повышенная долговечность.
-          </p>
-          <p className="mb-1">
-            <strong>Недостатки:</strong> Сложность установки, дополнительные расходы.
-          </p>
-          <p>
-            <strong>Стоимость:</strong> по запросу.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-xl md:text-2xl font-bold mb-1 text-red-700">Предчистовая отделка дома</h2>
-          <ul className="list-disc list-inside mb-1">
-            <li>Штукатурка стен</li>
-            <li>Полусухая стяжка пола</li>
-            <li>Электромонтажные работы</li>
-            <li>Установка сантехники</li>
-            <li>Система отопления</li>
-          </ul>
-          <p>
-            <strong>Цена на пред чистовую отделку начинается от 8 000 ₽/кв.м.</strong>
-          </p>
-        </div>
-      </div>
-    </div>
+            <div className="bg-gray-100 p-4 md:p-6 flex flex-col items-center">
+              <div className="w-full max-w-3xl p-4 md:p-6 bg-white shadow-md rounded-lg">
+                <div className="mb-3">
+                  <h2 className="text-xl md:text-2xl font-bold mb-1 text-blue-700">Облицовочный кирпич</h2>
+                  <p className="mb-1">
+                    <strong>Преимущества:</strong> Долговечность, устойчивость к погоде, классический вид.
+                  </p>
+                  <p>
+                    <strong>Недостатки:</strong> Высокая стоимость, трудоёмкая установка.
+                  </p>
+                </div>
+                <div className="mb-3">
+                  <h2 className="text-xl md:text-2xl font-bold mb-1 text-green-700">Декоративная штукатурка</h2>
+                  <p className="mb-1">
+                    <strong>Преимущества:</strong> Разнообразие текстур и цветов, улучшенная теплоизоляция.
+                  </p>
+                  <p>
+                    <strong>Недостатки:</strong> Требует ухода, менее долговечна.
+                  </p>
+                </div>
+                <div className="mb-3">
+                  <h2 className="text-xl md:text-2xl font-bold mb-1 text-yellow-700">Комбинированная отделка</h2>
+                  <p className="mb-1">
+                    <strong>Преимущества:</strong> Комбинация материалов, улучшенный дизайн, повышенная долговечность.
+                  </p>
+                  <p className="mb-1">
+                    <strong>Недостатки:</strong> Сложность установки, дополнительные расходы.
+                  </p>
+                  <p>
+                    <strong>Стоимость:</strong> по запросу.
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-xl md:text-2xl font-bold mb-1 text-red-700">Предчистовая отделка дома</h2>
+                  <ul className="list-disc list-inside mb-1">
+                    <li>Штукатурка стен</li>
+                    <li>Полусухая стяжка пола</li>
+                    <li>Электромонтажные работы</li>
+                    <li>Установка сантехники</li>
+                    <li>Система отопления</li>
+                  </ul>
+                  <p>
+                    <strong>Цена на пред чистовую отделку начинается от 8 000 ₽/кв.м.</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
             <img src={freeImg} alt="salom " />
           </div>
         </div>
 
-        <section className="reasons-to-trust  mt-[40px] ">
-          <h2 className="font-semibold   mb-[100px]  text-2xl">Почему с нами надежно?</h2>
+        <section className="reasons-to-trust mt-[40px]">
+          <h2 className="font-semibold mb-[100px] text-2xl">Почему с нами надежно?</h2>
           <div className="trust-features">
             <div className="trust-feature">
               <FaTag size={50} />
               <p><b>Фиксированная цена</b></p>
-              <p>
-              Стоимость строительства остается неизменной после подписания договора.
-              </p>
+              <p>Стоимость строительства остается неизменной после подписания договора.</p>
             </div>
             <div className="trust-feature">
               <FaUsers size={50} />
               <p><b>Квалифицированный персонал</b></p>
               <p>
-              В нашей команде работают только профильные специалисты, что гарантирует высокое качество выполненных работ.
+                В нашей команде работают только профильные специалисты, что гарантирует высокое качество выполненных работ.
               </p>
             </div>
             <div className="trust-feature">
@@ -234,25 +226,25 @@ function MoreInformation() {
               <FaTasks size={50} />
               <p><b>Поэтапная оплата</b></p>
               <p>
-              Оплата производится поэтапно: вы платите только за фактически выполненные работы после приемки этапа и подписания акта выполненных работ.
+                Оплата производится поэтапно: вы платите только за фактически выполненные работы после приемки этапа и подписания акта выполненных работ.
               </p>
             </div>
           </div>
         </section>
 
         <div className="contact-buttons">
-          <button className="telegram">
-            <FaTelegramPlane size={20} /> НАПИСАТЬ В TELEGRAM
+          <button className="telegram text-white  bg-[#8d58ee]">
+            <FaTelegramPlane size={20} /> <a href="https://t.me/swedstandard" target="_blank" rel="noopener noreferrer">НАПИСАТЬ В TELEGRAM</a>
           </button>
-          <button className="whatsapp bg-[green]">
-            <FaWhatsapp size={20} /> НАПИСАТЬ В WHATSAPP
+          <button className="whatsapp text-white  bg-[#3fe03f]">
+            <FaWhatsapp size={20} /> <a href="https://wa.me/79011410860" target="_blank" rel="noopener noreferrer">НАПИСАТЬ В WHATSAPP</a>
           </button>
         </div>
       </div>
 
       <CardContainer />
-      <ClientOpinion/>
-      <ContactForm/>
+      <ClientOpinion />
+      <ContactForm />
     </div>
   );
 }

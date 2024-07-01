@@ -34,10 +34,12 @@ function Main() {
       <AboutService/>
       <Technology/>
       <CardContainer/>
+      <SwedStandardWidget/>
       <ClientOpinion/>
 
-      <SwedStandardWidget/>
+
      <ContactForm/>
+
 
     </div>
   )

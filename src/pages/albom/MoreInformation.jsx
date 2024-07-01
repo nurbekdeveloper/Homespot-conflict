@@ -157,24 +157,53 @@ function MoreInformation() {
         <div>
         <h2 className="font-semibold  mb-[100px] text-2xl">Дополнительные услуги</h2>
           <div className="extra-usluge">
-          <div className="facade-container">
-            <div className="brick-facade">
-              <h2>Облицовочный кирпич</h2>
-              <p><strong>Преимущества:</strong> Долговечность, устойчивость к погоде, классический вид.</p>
-              <p><strong>Недостатки:</strong> Высокая стоимость, трудоёмкая установка.</p>
-            </div>
-            <div className="plaster-facade">
-              <h2>Декоративная штукатурка</h2>
-              <p><strong>Преимущества:</strong> Разнообразие текстур и цветов, улучшенная теплоизоляция.</p>
-              <p><strong>Недостатки:</strong> Требует ухода, менее долговечна.</p>
-            </div>
-            <div className="combined-facade">
-              <h2>Комбинированная отделка</h2>
-              <p><strong>Преимущества:</strong> Комбинация материалов, улучшенный дизайн, повышенная долговечность.</p>
-              <p><strong>Недостатки:</strong> Сложность установки, дополнительные расходы.</p>
-              <p><strong>Стоимость:</strong> по запросу.</p>
-            </div>
-           </div>
+          <div className="bg-gray-100 p-4 md:p-6 flex flex-col items-center">
+      <div className="w-full max-w-3xl p-4 md:p-6 bg-white shadow-md rounded-lg">
+        <div className="mb-3">
+          <h2 className="text-xl md:text-2xl font-bold mb-1 text-blue-700">Облицовочный кирпич</h2>
+          <p className="mb-1">
+            <strong>Преимущества:</strong> Долговечность, устойчивость к погоде, классический вид.
+          </p>
+          <p>
+            <strong>Недостатки:</strong> Высокая стоимость, трудоёмкая установка.
+          </p>
+        </div>
+        <div className="mb-3">
+          <h2 className="text-xl md:text-2xl font-bold mb-1 text-green-700">Декоративная штукатурка</h2>
+          <p className="mb-1">
+            <strong>Преимущества:</strong> Разнообразие текстур и цветов, улучшенная теплоизоляция.
+          </p>
+          <p>
+            <strong>Недостатки:</strong> Требует ухода, менее долговечна.
+          </p>
+        </div>
+        <div className="mb-3">
+          <h2 className="text-xl md:text-2xl font-bold mb-1 text-yellow-700">Комбинированная отделка</h2>
+          <p className="mb-1">
+            <strong>Преимущества:</strong> Комбинация материалов, улучшенный дизайн, повышенная долговечность.
+          </p>
+          <p className="mb-1">
+            <strong>Недостатки:</strong> Сложность установки, дополнительные расходы.
+          </p>
+          <p>
+            <strong>Стоимость:</strong> по запросу.
+          </p>
+        </div>
+        <div>
+          <h2 className="text-xl md:text-2xl font-bold mb-1 text-red-700">Предчистовая отделка дома</h2>
+          <ul className="list-disc list-inside mb-1">
+            <li>Штукатурка стен</li>
+            <li>Полусухая стяжка пола</li>
+            <li>Электромонтажные работы</li>
+            <li>Установка сантехники</li>
+            <li>Система отопления</li>
+          </ul>
+          <p>
+            <strong>Цена на пред чистовую отделку начинается от 8 000 ₽/кв.м.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
             <img src={freeImg} alt="salom " />
           </div>
         </div>

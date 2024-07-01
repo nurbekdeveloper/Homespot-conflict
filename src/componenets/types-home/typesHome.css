@@ -1,0 +1,84 @@
+/* Define basic styles */
+.type__home {
+    padding: 20px;
+  }
+
+  .containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 350px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .houseimg {
+    width: 100%;
+    max-height: 300px ;
+    border-radius: 5px;
+  }
+
+  .card-content {
+    text-align: center;
+  }
+
+  .card-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .card-content p {
+    font-size: 1em;
+    color: #333;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .card {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .card-content h3 {
+      font-size: 1.2em;
+    }
+
+    .card-content p {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .type__home {
+      padding: 10px;
+    }
+
+    .card {
+      padding: 5px;
+    }
+
+    .card-content h3 {
+      font-size: 1em;
+    }
+
+    .card-content p {
+      font-size: 0.8em;
+    }
+  }

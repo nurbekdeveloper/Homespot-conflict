@@ -1,0 +1,114 @@
+/* Base styles */
+.client-opinion-title {
+  text-align: center;
+
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.client-opinion{
+  margin-bottom: 100px ;
+}
+.client-opinion-home {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.client-opinion-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.client-opinion-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  width: 310px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-opinion-card:hover {
+  transform: scale(1.05);
+}
+
+.client-opinion-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.client-opinion-card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.client-opinion-card-content .client-opinion-date {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.client-opinion-card-content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.client-opinion-card-content p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.client-opinion-card-content .client-opinion-read-more {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .client-opinion-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .client-opinion-card {
+      width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .client-opinion-container {
+      justify-content: space-around;
+  }
+
+  .client-opinion-card {
+      width: calc(30.33% - 20px);
+  }
+}
+
+/* Center YouTube videos and make them responsive */
+.youtube-player-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin-bottom: 20px;
+}
+
+.youtube-player-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

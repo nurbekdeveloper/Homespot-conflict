@@ -1,0 +1,63 @@
+/* src/BuildingTypeCard.css */
+.cardb {
+  position: relative;
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.welcome{
+  font-size: 20px;
+}
+
+
+.title-welcome{
+  font-size: 20px;
+  padding: 8px;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #8bc34a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+/* src/BuildingTypes.css */
+.building-types {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+}
+.title {
+
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    text-align: center;
+    padding: 15px;
+
+
+}

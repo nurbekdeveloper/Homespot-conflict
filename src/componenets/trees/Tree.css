@@ -1,0 +1,121 @@
+/* Tree.css */
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.advantages-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.advantages-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.advantage-item {
+  flex: 1 1 45%;
+  max-width: 45%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.advantage-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #6baa34;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.advantage-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage-text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.advantage-text p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.tree-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tree-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .advantage-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .advantages-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tree-image {
+    display: none;
+  }
+
+  .advantage-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage-number {
+    margin-bottom: 10px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .advantage-text {
+    align-items: center;
+    text-align: center;
+  }
+}

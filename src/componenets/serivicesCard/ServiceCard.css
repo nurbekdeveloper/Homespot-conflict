@@ -1,0 +1,74 @@
+.foundation-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.foundation-card h2 {
+  text-align: center;
+  padding: 5px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+
+
+
+}
+.foundation-card-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px ;
+  padding: 10px;
+
+}
+
+.foundation-card-content {
+  padding: 15px;
+}
+
+.foundation-card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.foundation-card-description,
+.foundation-card-price {
+  margin: 5px 0;
+  color: #555;
+}
+
+.foundation-card-price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.foundation-card-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.foundation-card-button:hover {
+  background-color: #c0392b;
+}
+
+@media only screen and (max-width: 768px) {
+  .foundation-card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .foundation-card-image{
+    width: 90%;
+  }
+}

@@ -1,0 +1,101 @@
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    justify-content: space-around;
+    background-color: #8bc34a;
+  }
+
+  .quote-form {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2em;
+  }
+
+  .quote-input,
+  .quote-textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .quote-textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  .quote-attach {
+    color: #8bc34a;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+
+  .quote-button {
+    background-color: #8bc34a;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .quote-button:hover {
+    background-color: #7cb342;
+  }
+
+  .quote-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+
+  .quote-icons span {
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .quote-image{
+    max-width: 600px ;
+   height: auto;
+  }
+  .quote-image img {
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .quote-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .quote-form {
+      width: 45%;
+      margin-bottom: 0;
+    }
+
+    .quote-image {
+      width: 45%;
+    }
+  }
+/* modal.css */
+.ant-modal-close {
+  color: #ff0000; /* Bright red color for the close button */
+  font-size: 24px; /* Increase the size of the close button */
+}
+
+.ant-modal-close:hover {
+  color: #ff4d4d; /* Slightly brighter red on hover */
+}

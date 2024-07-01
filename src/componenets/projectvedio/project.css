@@ -1,0 +1,88 @@
+/* src/Projects.css */
+.projects-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .projects-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .view-all-projects {
+    color: green;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-info {
+    padding: 15px;
+  }
+  
+  .project-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #49423D;
+    text-align: left;
+
+  }
+  
+  .project-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .project-year {
+    font-size: 0.9em;
+    color: #49423D;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+
+    
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      margin-bottom: 20px;
+    }
+  }
+  

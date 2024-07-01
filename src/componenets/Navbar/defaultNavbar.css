@@ -1,0 +1,279 @@
+
+.nav_item_link  a{
+    color: black;
+    text-decoration: none;
+}
+.nav_item_link  a:hover{
+    color: red;
+}
+.navbar_link:hover{
+    color: red;
+}
+#nav-visible{
+    visibility: hidden;
+}
+@media screen and (min-width:1024px) {
+    .nav{
+        height: 110px;
+        background: #FFF;
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+        z-index: 111;
+        position: relative;
+    }
+    .navbar_nav{
+        display: flex;
+        gap: 20px;
+    }
+    .navbar_nav a{
+        font-size: 13px;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #2b2a29;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .navbar_logo img{
+        width: 200px;
+        padding-top: 15px;
+    }
+    .navbar #dropdown{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbar_phone{
+        display: flex;
+        gap: 15px;
+        text-decoration: none;
+
+    }
+    .navbar .navbar_phone p{
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: black;
+
+    }
+    .navbar .navbar_phone span{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: black;
+    }
+    .navbar_phone img{
+        width: 30px;
+    }
+    .navbar .dropdown{
+        z-index: 1;
+        display: grid;
+        top: 110px;
+        position: absolute;
+        align-items: center;
+        height: 150px;
+        /* width: 100%; */
+        background-color: #F3F3F3;
+        left: 0;
+        right: 0;
+        font-family: 'Montserrat', sans-serif;
+        grid-template-columns: repeat(5,1fr);
+        font-size: 12px;
+        padding: 0 25px;
+        transition: 0.5s;
+        /* z-index: -1; */
+    }
+    .navbar .dropdown.open{
+        transition: 0.5s;
+        top:-300px
+    }
+    .nav_item{
+        display: grid;
+        gap: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .nav_item Link{
+        text-decoration: none;
+        color: red;
+    }
+   .navbar_nav .nav_item_link{
+        color: #CA0000;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .nav{
+        height: 130px;
+        background: #FFF;
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 75px;
+        z-index: 111;
+        position: relative;
+    }
+    .navbar_nav{
+        display: flex;
+        gap: 30px;
+    }
+    .navbar_nav a{
+        font-size: 16px;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #2b2a29;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .navbar #dropdown{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbar_phone{
+        display: flex;
+        gap: 20px;
+
+    }
+    .navbar .navbar_phone p{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .navbar .navbar_phone span{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: black;
+    }
+    .navbar .dropdown{
+        z-index: 1;
+        display: grid;
+        top: 130px;
+        position: absolute;
+        align-items: center;
+        height: 200px;
+        /* width: 100%; */
+        background-color: #F3F3F3;
+        left: 0;
+        right: 0;
+        font-family: 'Montserrat', sans-serif;
+        grid-template-columns: repeat(5,1fr);
+        font-size: 18px;
+        padding: 0 75px;
+        transition: 0.5s;
+        /* z-index: -1; */
+    }
+    .navbar .dropdown.open{
+        transition: 0.5s;
+        top:-300px
+    }
+    .nav_item{
+        display: grid;
+        gap: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+   .navbar_nav .active{
+        color: #CA0000;
+    }
+}
+@media screen and (min-width:1920px) {
+    .nav{
+        height: 150px;
+        background: #FFF;
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 95px;
+        z-index: 111;
+        position: relative;
+    }
+    .navbar_nav{
+        display: flex;
+        gap: 40px;
+    }
+    .navbar_nav a{
+        font-size: 22px;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #2b2a29;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .navbar #dropdown{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbar_phone{
+        display: flex;
+        gap: 25px;
+
+    }
+    .navbar .navbar_phone p{
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .navbar .navbar_phone span{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: black;
+    }
+    .navbar .dropdown{
+        z-index: 1;
+        display: grid;
+        top: 150px;
+        position: absolute;
+        align-items: center;
+        height: 200px;
+        /* width: 100%; */
+        background-color: #F3F3F3;
+        left: 0;
+        right: 0;
+        font-family: 'Montserrat', sans-serif;
+        grid-template-columns: repeat(5,1fr);
+        font-size: 18px;
+        padding: 0 95px;
+        transition: 0.5s;
+        /* z-index: -1; */
+    }
+    .navbar .dropdown.open{
+        transition: 0.5s;
+        top:-300px
+    }
+    .nav_item{
+        display: grid;
+        gap: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+   .navbar_nav .active{
+        color: #CA0000;
+    }
+}
+.mobile-button1{
+    background-color: #29d431;
+
+        border-radius: 5px;
+        padding: 17px 30px;
+
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+
+}

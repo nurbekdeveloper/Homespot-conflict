@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  z-index: -100;
+  height: 50vh;
+  background: url('../../Assets/mainpage2.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+}
+
+.welcome-title{
+  margin-top: 180px ;
+  font-size: 25px;
+}
+.header h3 {
+  margin-top: 140px;
+}
+.header  p {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}

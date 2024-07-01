@@ -199,6 +199,10 @@ input:checked + .slider:before {
     width: 60px;
     height: 60px;
   }
+  .features{
+    display: flex;
+    flex-direction: column;
+  }
 
   .consultation {
     width: 100%;

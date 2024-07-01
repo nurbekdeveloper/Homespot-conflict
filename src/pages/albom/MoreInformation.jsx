@@ -97,22 +97,26 @@ function MoreInformation() {
                 <b>Фундамент:</b> {HouseData?.fundament}
               </li>
               <li className="label-item">
-                <b>Стены:</b>{HouseData?.steni}
+                <b>Стены:</b>
+                {HouseData?.steni}
               </li>
               <li className="label-item">
                 <b>Потолки:</b> Первый этаж 3 м,
               </li>
               <li className="label-item">
-                <b>Перекрытие: </b>– по деревянным балкам с обработкой огне–биозащитой.
+                <b>Перекрытие: </b>– по деревянным балкам с обработкой
+                огне–биозащитой.
               </li>
               <li className="label-item">
                 <b>Перегородки:</b> Кирпичные, толщиной, 120 мм,
               </li>
               <li className="label-item">
-                <b>Вентиляция:</b> Естественная вентиляция для котельной, кухни и санузлов, выводящаяся на кровлю.
+                <b>Вентиляция:</b> Естественная вентиляция для котельной, кухни
+                и санузлов, выводящаяся на кровлю.
               </li>
               <li className="label-item">
-                <b>Кровля :</b> Стропильная система, супердиффузионная мембрана Folder, металлочерепица Grand Line 0.5 мм (Ral 8017).
+                <b>Кровля :</b> Стропильная система, супердиффузионная мембрана
+                Folder, металлочерепица Grand Line 0.5 мм (Ral 8017).
               </li>
             </ul>
           </div>
@@ -157,55 +161,67 @@ function MoreInformation() {
             Дополнительные услуги
           </h2>
           <div className="extra-usluge">
-          <div className="facade-container p-6">
-      <div className="brick-facade p-4 border border-gray-300 rounded-lg mb-4">
-        <h2 className="text-2xl font-bold mb-2">Облицовочный кирпич</h2>
-        <p>
-          <strong>Преимущества:</strong> Долговечность, устойчивость к погоде, классический вид.
-        </p>
-        <p>
-          <strong>Недостатки:</strong> Высокая стоимость, трудоёмкая установка.
-        </p>
-      </div>
+            <div className="facade-container p-6">
+              <div className="brick-facade p-4 border border-gray-300 rounded-lg mb-4">
+                <h2 className="text-2xl font-bold mb-2">Облицовочный кирпич</h2>
+                <p>
+                  <strong>Преимущества:</strong> Долговечность, устойчивость к
+                  погоде, классический вид.
+                </p>
+                <p>
+                  <strong>Недостатки:</strong> Высокая стоимость, трудоёмкая
+                  установка.
+                </p>
+              </div>
 
-      <div className="plaster-facade p-4 border border-gray-300 rounded-lg mb-4">
-        <h2 className="text-2xl font-bold mb-2">Декоративная штукатурка</h2>
-        <p>
-          <strong>Преимущества:</strong> Разнообразие текстур и цветов, улучшенная теплоизоляция.
-        </p>
-        <p>
-          <strong>Недостатки:</strong> Требует ухода, менее долговечна.
-        </p>
-      </div>
+              <div className="plaster-facade p-4 border border-gray-300 rounded-lg mb-4">
+                <h2 className="text-2xl font-bold mb-2">
+                  Декоративная штукатурка
+                </h2>
+                <p>
+                  <strong>Преимущества:</strong> Разнообразие текстур и цветов,
+                  улучшенная теплоизоляция.
+                </p>
+                <p>
+                  <strong>Недостатки:</strong> Требует ухода, менее долговечна.
+                </p>
+              </div>
 
-      <div className="combined-facade p-4 border border-gray-300 rounded-lg mb-4">
-        <h2 className="text-2xl font-bold mb-2">Комбинированная отделка</h2>
-        <p>
-          <strong>Преимущества:</strong> Комбинация материалов, улучшенный дизайн, повышенная долговечность.
-        </p>
-        <p>
-          <strong>Недостатки:</strong> Сложность установки, дополнительные расходы.
-        </p>
-        <p>
-          <strong>Стоимость:</strong> по запросу.
-        </p>
-      </div>
+              <div className="combined-facade p-4 border border-gray-300 rounded-lg mb-4">
+                <h2 className="text-2xl font-bold mb-2">
+                  Комбинированная отделка
+                </h2>
+                <p>
+                  <strong>Преимущества:</strong> Комбинация материалов,
+                  улучшенный дизайн, повышенная долговечность.
+                </p>
+                <p>
+                  <strong>Недостатки:</strong> Сложность установки,
+                  дополнительные расходы.
+                </p>
+                <p>
+                  <strong>Стоимость:</strong> по запросу.
+                </p>
+              </div>
 
-      <div className="preliminary-finish p-4 border border-gray-300 rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">Предчистовая отделка дома</h2>
-        <ul className="list-disc pl-5 mb-2">
-          <li>Штукатурка стен</li>
-          <li>Полусухая стяжка пола</li>
-          <li>Электромонтажные работы</li>
-          <li>Установка сантехники</li>
-          <li>Система отопления</li>
-        </ul>
-        <p>
-          Цена на пред чистовую отделку начинается от <strong>8 000 ₽/кв.м.</strong>
-        </p>
-      </div>
-    </div>
-            <img src={freeImg} alt="salom " />
+              <div className="preliminary-finish p-4 border border-gray-300 rounded-lg">
+                <h2 className="text-2xl font-bold mb-2">
+                  Предчистовая отделка дома
+                </h2>
+                <ul className="list-disc pl-5 mb-2">
+                  <li>Штукатурка стен</li>
+                  <li>Полусухая стяжка пола</li>
+                  <li>Электромонтажные работы</li>
+                  <li>Установка сантехники</li>
+                  <li>Система отопления</li>
+                </ul>
+                <p>
+                  Цена на пред чистовую отделку начинается от{" "}
+                  <strong>8 000 ₽/кв.м.</strong>
+                </p>
+              </div>
+            </div>
+            <img src={freeImg} alt="salom" className="w-full h-auto mt-4 rounded-lg" />
           </div>
         </div>
 
